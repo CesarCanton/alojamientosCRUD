@@ -1,5 +1,7 @@
 <?php
 require_once __DIR__ . '/../controllers/UsuarioController.php';
+session_start();
+
 //para crear usuario
 if (isset($_POST['nombre'], $_POST['email'], $_POST['password'])) {
     $nombre = $_POST['nombre'];

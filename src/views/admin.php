@@ -3,6 +3,7 @@ require '../controllers/AlojamientoController.php';
 require '../controllers/UsuarioController.php';
 session_start();
 
+
 if (isset($_POST['logout'])) {
     UsuarioController::logout();
 }

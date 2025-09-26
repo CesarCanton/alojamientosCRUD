@@ -4,10 +4,10 @@ require '../controllers/AlojamientoController.php';
 require '../controllers/RegistroAlojamientoController.php';
 session_start();
 
+
 if (isset($_POST['logout'])) {
     UsuarioController::logout();
 }
-// Obtener alojamientos disponibles
 $alojamientos = AlojamientoController::getAllAlojamientos();
 // $alojamientosReservados = RegistroAlojamientoController::getAllRegistros();
 $idUsuario = $_SESSION['id'];
@@ -95,8 +95,5 @@ if (isset($_POST['cancelar'])) {
         </div>
     </main>
 </body>
-
-
-
 
 </html>

@@ -1,5 +1,4 @@
 <?php
-session_start();
 require '../controllers/UsuarioController.php';
 
 if (isset($_POST['email'], $_POST['password'])) {

@@ -1,5 +1,7 @@
 <?php
 require_once __DIR__ . '/../controllers/AlojamientoController.php';
+session_start();
+
 if(isset($_POST['nombre'], $_POST['ubicacion'], $_POST['descripcion'])){
     $nombre = $_POST['nombre'];
     $ubicacion = $_POST['ubicacion'];
